@@ -374,39 +374,62 @@ export const ServiceData = [
 export const FeaturesData: IFeaturesData[] = [
     {
         image: "/images/services/software-development.webp",
-        name: "Commercial & Business Loans",
+        name: "Loan & Financial Solutions",
         details:
-            "Fuel your business growth with tailored financial solutions. From working capital and MSME/CGTMSE schemes to machinery loans, get seamless approvals with competitive interest rates."
+            "We assist customers in exploring suitable financing options including Home Loans, Business Loans, Personal Loans, Mortgage/LAP, Working Capital Funding and Loan Refinancing based on their profile and eligibility."
     },
     {
        image: "/images/services/web-development.webp",
-        name: "Home Loans & LAP",
+        name: "Accounting & Taxation",
         details:
-            "Unlock the dream of your ideal property or leverage your existing real estate with high-value Loan Against Property (LAP) backed by 30+ leading national banks."
+            "Complete accounting and compliance support for businesses, professionals and entrepreneurs — Bookkeeping, GST, Income Tax Returns, TDS, Audit Assistance, Virtual Accounting and MIS Reporting."
     },
     {
        image: "/images/services/game-development.webp",
-        name: "Registrations & Compliance",
+        name: "CIBIL & Credit Services",
         details:
-            "Get complete corporate peace of mind. We handle Trade Licenses, GST, Company Incorporation, FSSAI, and annual ITR compliance with total speed and regulatory accuracy."
+            "We provide credit-report analysis and assistance in identifying potential inaccuracies — including unknown accounts, overdue review, DPD review, dispute filing and credit profile improvement guidance."
+    },
+    {
+       image: "/images/services/mobile-development.webp",
+        name: "Demat & Trading",
+        details:
+            "We assist customers with Demat and Trading account opening, Equity, F&O, Commodity, IPO, Mutual Funds, ETFs, Algo Trading and access to market-related services through applicable platforms."
+    },
+    {
+       image: "/images/services/graphic-design.webp",
+        name: "Corporate Banking & Legal",
+        details:
+            "Business Registration, Corporate Documentation, Current Account assistance, Loan Documentation, Business Agreements, Legal Documentation, Contract and Property Documentation support."
+    },
+    {
+       image: "/images/services/game-development.webp",
+        name: "Digital Marketing",
+        details:
+            "Website Development, Social Media Marketing, Google & Meta Ads, SEO, Local SEO, Google Business Profile Optimization, Lead Generation Campaigns and Social Media Management."
     }
 ];
 
 export const StepsData = [
     {
         image: <ShieldCheck className="w-8 h-8 text-gold-500" />,
-        title: "Complete Transparency",
-        details: "Zero hidden charges, transparent bank margins, and real-time loan file tracking."
+        title: "Professional Assistance",
+        details: "Expert guidance across financial, accounting, taxation, corporate and digital domains — all under one trusted brand."
     },
     {
         image: <Landmark className="w-8 h-8 text-gold-500" />,
-        title: "30+ Banking Partners",
-        details: "Direct institutional ties with top national and private banks ensure maximum loan sanction approvals."
+        title: "Multiple Services",
+        details: "Access Loans, CIBIL, Accounting, Demat, Corporate Banking, Legal and Digital Marketing services without coordinating multiple providers."
     },
     {
         image: <Zap className="w-8 h-8 text-gold-500" />,
-        title: "Speedy Processing",
-        details: "Swift file preparation, minimal turnaround time, and express disbursement options."
+        title: "Customer-focused Approach",
+        details: "We understand each customer's requirement and help identify suitable options while coordinating documentation and service processes."
+    },
+    {
+        image: <Rocket className="w-8 h-8 text-gold-500" />,
+        title: "End-to-End Coordination",
+        details: "From initial enquiry to completion, we coordinate every step of the process ensuring a smooth and transparent experience."
     }
 ];
 
@@ -414,46 +437,46 @@ export const WhoWeAreData = [
     {
         image: <Rocket className="w-8 h-8 text-gold-500" />,
         title: "Our Mission",
-        details: "At Vaishnavi Associates, our mission is to empower individuals, startups, and established enterprises by providing effortless access to institutional finance and prime real estate opportunities. We combine financial acumen with trustworthy advisory to ensure our clients achieve their aspirations with complete confidence."
+        details: "At Vaishnavi Associates, our mission is to simplify complex financial, accounting, taxation, corporate and digital requirements for individuals, entrepreneurs, businesses and corporates through professional guidance, transparent communication and coordinated assistance."
     },
     {
         image: <Eye className="w-8 h-8 text-gold-500" />,
         title: "Our Vision",
-        details: "To be recognized as Telangana & Andhra Pradesh's most respected financial and real estate consultancy firm, benchmarked for highest loan approval ratios, client-first advisory, integrity, and end-to-end corporate registration services."
+        details: "To be the most trusted multi-service professional solutions firm — where customers can access financial, accounting, investment and digital solutions through one partner instead of coordinating with multiple service providers."
     },
     {
         image: <Award className="w-8 h-8 text-gold-500" />,
-        title: "Why Us",
-        details: "With deep networks across 30+ leading private and public sector banks, an experienced team of Chartered Accountants, financial consultants, and real estate specialists, we deliver customized credit structures, minimal paperwork, and doorstep consultation."
+        title: "Why Vaishnavi Associates?",
+        details: "One Partner. Multiple Business Solutions. Professional assistance, customer-focused approach, end-to-end coordination and business-oriented solutions across Loans, CIBIL, Accounting, Demat, Corporate and Digital Marketing."
     }
 ];
 
 export const AboutRulesData = {
     support: {
-        name: "Client Commitment",
+        name: "Individuals",
         child: [
-            "Complete confidentiality and data protection for all loan documentation.",
-            "Personalized credit analysis matching each applicant to the best bank interest rate.",
-            "End-to-end doorstep assistance from file preparation to fund disbursement.",
-            "Continuous post-sanction support and advisory for balance transfers."
+            "Home Loans, Personal Finance and Loan Refinancing assistance.",
+            "CIBIL report analysis and credit profile improvement guidance.",
+            "Demat and trading account assistance — Equity, F&O, IPO and Mutual Funds.",
+            "Income Tax Returns filing and compliance support."
         ]
     },
     accountability: {
-        name: "Transparency & Trust",
+        name: "Entrepreneurs & SMBs",
         child: [
-            "Zero hidden charges or misleading terms.",
-            "Accurate pre-eligibility verification before credit bureau submission to safeguard CIBIL score.",
-            "Upfront guidance on processing fees, statutory charges, and banking policies.",
-            "Clear timelines with regular SMS and WhatsApp milestone updates."
+            "Business Loans, Working Capital Funding and Corporate Funding Assistance.",
+            "GST Registration, Monthly Returns, TDS Compliance and Tax Audit Assistance.",
+            "Bookkeeping, Virtual Accounting and Financial Reporting (MIS).",
+            "Digital Marketing — Website, SEO, Google Ads, Meta Ads and Lead Generation."
         ]
     },
     excellence: {
-        name: "Financial Excellence",
+        name: "Corporates",
         child: [
-            "Highest approval rates through multi-bank strategic underwriting.",
-            "Specialized expertise in complex business loans, LAP, and builder tie-ups.",
-            "Rigorous legal verification on all commercial & residential property transactions.",
-            "Experienced team of ex-bankers, legal experts, and tax consultants."
+            "Corporate Banking, Current Account and Funding Assistance.",
+            "Business Structuring, Agreements, Legal Documentation and Contract Support.",
+            "Full-time or Part-time Accounting, GST, TDS and Audit Assistance.",
+            "Property Documentation Assistance and Corporate Legal Support."
         ]
     }
 };
@@ -461,23 +484,23 @@ export const AboutRulesData = {
 export const AchievementData = [
     {
         icons: <Coins className="w-10 h-10 text-gold-500" />,
-        digit: "₹250+ Cr",
-        title: "Loans Disbursed"
+        digit: "6+",
+        title: "Service Categories"
     },
     {
         icons: <Landmark className="w-10 h-10 text-gold-500" />,
-        digit: "30+",
-        title: "Partner Banks"
+        digit: "Multi-domain",
+        title: "Professional Solutions"
     },
     {
         icons: <Smile className="w-10 h-10 text-gold-500" />,
-        digit: "5,000+",
-        title: "Satisfied Clients"
+        digit: "One Partner",
+        title: "Multiple Services"
     },
     {
         icons: <CheckCircle2 className="w-10 h-10 text-gold-500" />,
-        digit: "99%",
-        title: "Sanction Ratio"
+        digit: "End-to-End",
+        title: "Coordination"
     },
 ];
 
@@ -2076,11 +2099,15 @@ export const OurTeamData = [
 ]
 
 export const InformationData = {
-    email: "info@vaishnaviassociates.com",
+    email: "vaishnaviassociates.services@gmail.com",
     address: "S.P.N Mansion 2, Jayabheri Park Rd, Kompally, Hyderabad, Telangana 500100",
     addressLink: "https://maps.google.com/?q=Kompally+Hyderabad+Telangana",
     addressIframLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.8876807833075!2d78.4862417751681!3d17.53673518337728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f86f78819ab%3A0x7d6f51cb32b2ef89!2sKompally%2C%20Hyderabad%2C%20Telangana%20500100!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-    contactNumber: "+91 91822 58090"
+    contactNumber: "+91 92999 99676",
+    whatsappNumber: "+91 62818 32385",
+    tagline: "Financial • Accounting • Corporate • Digital Solutions",
+    services: "Loans | CIBIL Services | Accounting & Taxation | Demat & Trading | Corporate Banking & Legal | Digital Marketing",
+    disclaimer: "Services are subject to applicable laws, regulations, eligibility criteria, documentation and approval by relevant institutions, regulators, brokers, credit bureaus or service providers. Loan approval, interest rates, investment returns, credit-score changes and other outcomes are not guaranteed. Customers should review applicable terms and conditions before proceeding."
 }
 
 export const Logos = {

@@ -42,13 +42,13 @@ export default function Footer() {
                   VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
                 </span>
                 <span className="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">
-                  Loans & Real Estate Services
+                  Loans & Business Consultancy Services
                 </span>
               </div>
             </Link>
 
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Hyderabad's premier financial advisory and real estate consultancy firm. We partner with 30+ leading banks to secure low-interest loans, strategic commercial properties, and corporate licenses.
+              Hyderabad's premier financial advisory and business consultancy firm. We partner with 30+ leading banks to secure low-interest loans, business solutions, and corporate licenses.
             </p>
 
             <div className="pt-2 flex items-center gap-3 text-xs text-slate-300">
