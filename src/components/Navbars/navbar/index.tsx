@@ -193,7 +193,7 @@ export default function Navbar() {
                 VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
               </span>
               <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold text-slate-500 block">
-                Loans & Business Consultancy Services
+                Loans & Real Estate Services
               </span>
             </div>
           </Link>

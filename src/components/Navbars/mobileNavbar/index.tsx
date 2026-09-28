@@ -54,7 +54,7 @@ export default function MobileDrawer({
                 VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
               </span>
               <span className="text-[10px] text-slate-500 font-medium">
-                Loans & Business Consultancy
+                Loans & Real Estate
               </span>
             </div>
           </div>

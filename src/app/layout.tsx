@@ -18,9 +18,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Vaishnavi Associates | Trusted Loans & Business Consultancy Services",
-  description: "Vaishnavi Associates offers premier business loans, home loans, loan against property, business consultancy, and company registration services.",
-  keywords: "business loans, home loan, loan against property, business consultancy hyderabad, trade license, gst registration, vaishnavi associates",
+  title: "Vaishnavi Associates | Trusted Loans & Real Estate Services",
+  description: "Vaishnavi Associates offers premier business loans, home loans, loan against property, real estate advisory, and company registration services.",
+  keywords: "business loans, home loan, loan against property, real estate hyderabad, trade license, gst registration, vaishnavi associates",
 };
 
 export default function RootLayout({
