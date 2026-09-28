@@ -9,6 +9,7 @@ import Technologies from "@src/components/technologies";
 import EmiCalculator from "@src/components/calculator/EmiCalculator";
 import Features from "@src/components/features";
 import WhyChooseUs from "@src/components/whyChooseUs";
+import WhoWeServe from "@src/components/home/WhoWeServe";
 import { Star, Quote, ArrowRight, Phone, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { InformationData } from "@src/constant";
 
@@ -62,7 +63,10 @@ export default function Home() {
       {/* 6. Why Choose Vaishnavi Associates */}
       <WhyChooseUs />
 
-      {/* 7. Client Reviews & Testimonials Section */}
+      {/* 7. Who We Serve */}
+      <WhoWeServe />
+
+      {/* 8. Client Reviews & Testimonials Section */}
       <section className="py-20 sm:py-28 bg-white relative">
         <div className="mainContainer">
           

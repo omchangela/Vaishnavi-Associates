@@ -18,19 +18,19 @@ export default function WhoWeAre() {
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-900/5 border border-gold-500/30 text-navy-900 text-xs sm:text-sm font-semibold mb-4 shadow-sm">
             <Sparkles className="w-4 h-4 text-gold-500" />
-            <span>Our Foundation & Purpose</span>
+            <span>About Vaishnavi Associates</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-navy-950 tracking-tight leading-tight">
-            Building Long-Term Prosperity Through{" "}
-            <span className="gold-gradient-text">Trust & Excellence</span>
+            Professional Solutions Under{" "}
+            <span className="gold-gradient-text">One Roof</span>
           </h2>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Headquartered in Hyderabad, Vaishnavi Associates is committed to simplifying debt financing, commercial real estate acquisition, and corporate compliance for individuals and thriving enterprises.
+            Vaishnavi Associates is a multi-service professional solutions firm. We understand each customer's requirement and help identify suitable options while coordinating documentation and service processes where applicable.
           </p>
         </div>
 
-        {/* 3 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* 5 Highlights Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {WhoWeAreData.map((val: IWhoWeAreData, index: number) => (
             <div
               key={index}
@@ -38,7 +38,7 @@ export default function WhoWeAre() {
             >
               <div>
                 <div className="w-14 h-14 rounded-2xl bg-navy-900/5 group-hover:bg-gold-500/15 flex items-center justify-center mb-6 transition-colors">
-                  {icons[index] || icons[0]}
+                  {val.image || icons[index % icons.length]}
                 </div>
                 <h3 className="text-xl font-bold font-display text-navy-950 group-hover:text-gold-600 transition-colors mb-3">
                   {val.title}

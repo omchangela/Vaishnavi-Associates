@@ -54,7 +54,7 @@ export default function MobileDrawer({
                 VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
               </span>
               <span className="text-[10px] text-slate-500 font-medium">
-                Loans & Real Estate
+                Financial • Corporate • Digital
               </span>
             </div>
           </div>
@@ -100,35 +100,49 @@ export default function MobileDrawer({
             {/* Custom Links for Mobile */}
             <div className="border-t border-slate-100 pt-2">
               <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-3 block mb-1">
-                Our Services
+                Our Solutions
               </span>
               <Link
-                href="/loans/business-loan"
+                href="/loans"
                 onClick={closeDrawer}
                 className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
               >
-                💼 Business Loans & MSME
+                💰 Loan & Financial Solutions
               </Link>
               <Link
-                href="/contact-us"
+                href="/cibil"
                 onClick={closeDrawer}
                 className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
               >
-                🏠 Home Loans & LAP
+                🛡️ CIBIL & Credit Services
               </Link>
               <Link
-                href="/registrations/trade-license"
+                href="/accounting"
                 onClick={closeDrawer}
                 className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
               >
-                📜 Trade License Registration
+                📑 Accounting & Taxation
               </Link>
               <Link
-                href="/compliance/itr-filing"
+                href="/demat"
                 onClick={closeDrawer}
                 className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
               >
-                📊 ITR Filing & Compliance
+                📈 Demat & Trading Solutions
+              </Link>
+              <Link
+                href="/corporate-banking"
+                onClick={closeDrawer}
+                className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
+              >
+                🏛️ Corporate Banking & Legal
+              </Link>
+              <Link
+                href="/digital-marketing"
+                onClick={closeDrawer}
+                className="block px-3 py-2 rounded-xl text-sm font-semibold text-navy-900 hover:bg-slate-50 hover:text-gold-600"
+              >
+                🌐 Digital Marketing
               </Link>
             </div>
 

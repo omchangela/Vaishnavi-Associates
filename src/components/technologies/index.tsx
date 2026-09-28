@@ -9,73 +9,76 @@ import {
   Scale,
   ArrowRight,
   Sparkles,
-  ShieldCheck
+  ShieldCheck,
+  TrendingUp,
+  Globe,
+  Coins
 } from "lucide-react";
 
 export default function Technologies() {
   const pillars = [
     {
-      title: "Business & MSME Loans",
-      description: "Fast collateral-free and secured business capital up to ₹20 Crore with low interest rates and flexible tenures.",
-      icon: <Briefcase className="w-6 h-6 text-gold-500" />,
-      features: ["Working Capital & Term Loans", "Machinery & Equipment Finance", "CGTMSE Collateral-Free Schemes"],
-      link: "/loans/business-loan",
+      title: "Loan & Financial Solutions",
+      description: "Structured debt and financing options for individuals and enterprises — Business Loans, Home Loans, LAP, and project financing with leading banks.",
+      icon: <Coins className="w-6 h-6 text-gold-500" />,
+      features: ["Business & MSME Capital", "Home Loans & Mortgage", "Loan Against Property (LAP)"],
+      link: "/loans",
       badge: "Popular"
     },
     {
-      title: "Home Loans & Mortgage",
-      description: "Realize your dream home with end-to-end guidance, 8.40% starting interest, and maximum eligibility sanction.",
-      icon: <Home className="w-6 h-6 text-gold-500" />,
-      features: ["New Flats & Villas", "Plot Purchase & Construction", "Balance Transfer with Top-up"],
-      link: "/contact-us",
-      badge: "Lowest Rates"
+      title: "CIBIL & Credit Services",
+      description: "Comprehensive credit score analysis, error correction, dispute resolution, and tailored guidance to enhance your creditworthiness.",
+      icon: <ShieldCheck className="w-6 h-6 text-gold-500" />,
+      features: ["CIBIL Score Analysis", "Dispute Resolution Support", "Credit Profile Restoration"],
+      link: "/cibil",
+      badge: "Essential"
     },
     {
-      title: "Loan Against Property (LAP)",
-      description: "Unlock up to 75% market value of your residential, commercial, or industrial real estate at attractive rates.",
-      icon: <Building className="w-6 h-6 text-gold-500" />,
-      features: ["High Sanction Ticket Sizes", "Longer Tenures up to 15 Years", "Residential & Commercial Assets"],
-      link: "/contact-us",
+      title: "Accounting & Taxation Services",
+      description: "Full-scale accounting, bookkeeping, and statutory compliance — GST returns, Income Tax Returns (ITR), TDS, and audit coordination.",
+      icon: <Receipt className="w-6 h-6 text-gold-500" />,
+      features: ["Bookkeeping & Virtual Accounting", "Monthly & Annual GST Filings", "Income Tax Returns (ITR)"],
+      link: "/accounting",
     },
     {
-      title: "Real Estate Advisory",
-      description: "Curated portfolio of prime commercial spaces, residential gated communities, and high-growth open plots in Telangana.",
-      icon: <Scale className="w-6 h-6 text-gold-500" />,
-      features: ["Commercial Leasing & Retail", "Verified Gated Community Plots", "Legal & Title Verification"],
-      link: "/contact-us",
+      title: "Demat & Trading Services",
+      description: "Seamless setup and onboarding for capital market investments. Demat and trading account opening with dedicated portfolio assistance.",
+      icon: <TrendingUp className="w-6 h-6 text-gold-500" />,
+      features: ["Demat & Trading Accounts", "Equity & Mutual Fund Setup", "Portfolio Guidance"],
+      link: "/demat",
     },
     {
-      title: "Corporate Registrations",
-      description: "Start and scale your business legally. Comprehensive trade licenses, GSTIN, and company incorporation.",
+      title: "Corporate Banking & Legal Services",
+      description: "Complete corporate legal and banking advisory: company incorporation, municipal trade licenses, MSME registrations, and statutory documentation.",
       icon: <FileCheck2 className="w-6 h-6 text-gold-500" />,
-      features: ["Municipal Trade License", "Pvt Ltd & LLP Incorporation", "MSME / Udyam & FSSAI"],
-      link: "/registrations/trade-license",
+      features: ["Company & LLP Incorporation", "Municipal Trade License", "Corporate Banking Assistance"],
+      link: "/corporate-banking",
       badge: "Fast Track"
     },
     {
-      title: "Taxation & Compliance",
-      description: "Dedicated CA and financial advisory for timely ITR filing, GST reconciliation, and regulatory audits.",
-      icon: <Receipt className="w-6 h-6 text-gold-500" />,
-      features: ["Business & Salaried ITR", "Monthly & Annual GST Returns", "CA Net Worth Certifications"],
-      link: "/compliance/itr-filing",
+      title: "Digital Marketing Services",
+      description: "Modern digital marketing and branding solutions to accelerate online visibility, generate quality leads, and expand business reach.",
+      icon: <Globe className="w-6 h-6 text-gold-500" />,
+      features: ["Search Engine Optimization (SEO)", "Social Media Marketing", "Website & Brand Growth"],
+      link: "/digital-marketing",
     },
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-white relative">
+    <section id="services" className="py-20 sm:py-28 bg-white relative">
       <div className="mainContainer">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-900/5 border border-gold-500/30 text-navy-900 text-xs sm:text-sm font-semibold mb-4 shadow-sm">
             <Sparkles className="w-4 h-4 text-gold-500" />
-            <span>Comprehensive Financial & Property Solutions</span>
+            <span>Comprehensive Professional Solutions</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-navy-950 tracking-tight leading-tight">
-            Our Core <span className="gold-gradient-text">Specializations</span>
+            Our Core <span className="gold-gradient-text">Solutions</span>
           </h2>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Whether you need emergency working capital, your dream property sanction, or hassle-free government trade licensing, Vaishnavi Associates provides seamless execution.
+            Professional financial, accounting, taxation, corporate, investment and digital solutions for individuals, entrepreneurs, businesses and corporates.
           </p>
         </div>
 

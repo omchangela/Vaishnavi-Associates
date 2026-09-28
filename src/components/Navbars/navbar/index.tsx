@@ -56,64 +56,44 @@ export default function Navbar() {
 
   const loansMenu: NavSection[] = [
     {
-      title: "Commercial & Business",
-      icon: <Coins className="w-4 h-4 text-gold-500" />,
-      items: [
-        { name: "Business Loans", desc: "Working capital & MSME credit up to ₹20 Cr", path: "/loans/business-loan", badge: "Fast Track" },
-        { name: "Personal Loans", desc: "Unsecured instant funds up to ₹50 Lakh", path: "/loans/personal-loan" },
-        { name: "Machinery Loans", desc: "Equipment & asset purchase up to 90%", path: "/loans/machinery-loan" },
-        { name: "MSME / CGTMSE Loans", desc: "Collateral-free government schemes", path: "/loans/msme-loan", badge: "Subsidized" },
-        { name: "Working Capital / CC-OD", desc: "Cash credit & revolving overdraft limits", path: "/loans/working-capital-loan" },
-      ],
-    },
-    {
-      title: "Mortgage & Property",
+      title: "Individual & Mortgage Solutions",
       icon: <Building2 className="w-4 h-4 text-gold-500" />,
       items: [
         { name: "Home Loans", desc: "Lowest interest rate from 8.40% p.a.", path: "/loans/home-loan", badge: "From 8.4%" },
-        { name: "Loan Against Property (LAP)", desc: "Mortgage residential/commercial up to ₹50 Cr", path: "/loans/loan-against-property" },
-        { name: "Loan Against Shares", desc: "Instant liquidity against stocks & mutual funds", path: "/loans/loan-against-shares" },
-        { name: "Gold Loans", desc: "Instant 30-min cash against gold jewelry", path: "/loans/gold-loan" },
-        { name: "Project Loans", desc: "Large-scale infrastructure & plant finance", path: "/loans/project-loan" },
+        { name: "Home Loan Balance Transfer & Top-Up", desc: "Reduce existing EMI & extra capital", path: "/loans/home-loan-balance-transfer", badge: "Save ROI" },
+        { name: "Mortgage / Loan Against Property", desc: "Mortgage residential/commercial up to ₹50 Cr", path: "/loans/loan-against-property" },
+        { name: "Personal Loans", desc: "Unsecured instant funds up to ₹50 Lakh", path: "/loans/personal-loan" },
+      ],
+    },
+    {
+      title: "Business & Corporate Solutions",
+      icon: <Coins className="w-4 h-4 text-gold-500" />,
+      items: [
+        { name: "Business Loans", desc: "Working capital & MSME credit up to ₹20 Cr", path: "/loans/business-loan", badge: "Fast Track" },
+        { name: "Working Capital Funding", desc: "Cash credit & revolving overdraft limits", path: "/loans/working-capital-loan" },
+        { name: "Loan Refinancing / Balance Transfer", desc: "Consolidate & refinance high-cost debt", path: "/loans/loan-refinancing" },
+        { name: "Corporate Funding Assistance", desc: "Large-scale infrastructure & plant finance", path: "/loans/corporate-funding" },
       ],
     },
   ];
 
-  const registrationsMenu: NavSection[] = [
+  const servicesMenu: NavSection[] = [
     {
-      title: "Business Licensing",
-      icon: <FileCheck2 className="w-4 h-4 text-gold-500" />,
-      items: [
-        { name: "Trade License", desc: "Municipal GHMC & HMDA licensing", path: "/licenses/trade-license", badge: "Instant" },
-        { name: "GST Registration", desc: "New 15-digit GSTIN allotment", path: "/gst/gst-registration" },
-        { name: "MSME / Udyam Certificate", desc: "Priority sector credit & subsidies", path: "/licenses/msme-registration" },
-        { name: "FSSAI Food License", desc: "Food safety license for Swiggy/Zomato", path: "/licenses/fssai-registration" },
-        { name: "Import Export Code (IEC)", desc: "DGFT international trade license", path: "/licenses/import-export-code" },
-      ],
-    },
-    {
-      title: "Incorporation & Startup",
-      icon: <FileText className="w-4 h-4 text-gold-500" />,
-      items: [
-        { name: "Private Limited Company", desc: "MCA incorporation with DIN, DSC, PAN", path: "/business-registration/private-limited-company", badge: "Popular" },
-        { name: "LLP Registration", desc: "Limited liability partnership setup", path: "/business-registration/llp-registration" },
-        { name: "Partnership Firm", desc: "ROF registration & deed drafting", path: "/business-registration/partnership-firm-registration" },
-        { name: "One Person Company (OPC)", desc: "Corporate structure for solo founders", path: "/business-registration/one-person-company" },
-        { name: "Startup India Registration", desc: "3-year tax exemption & DPIIT recognition", path: "/business-registration/startup-registration" },
-      ],
-    },
-  ];
-
-  const complianceMenu: NavSection[] = [
-    {
-      title: "Tax & Compliance",
+      title: "Financial & Advisory Solutions",
       icon: <ShieldCheck className="w-4 h-4 text-gold-500" />,
       items: [
-        { name: "ITR Filing", desc: "Salary & business income tax return", path: "/tax/itr-filing", badge: "Tax Season" },
-        { name: "GST Return Filings", desc: "Monthly GSTR-1, 3B & annual GSTR-9", path: "/gst/gst-return-filing" },
-        { name: "TDS Return Filing", desc: "Form 24Q, 26Q & TRACES generation", path: "/tax/tds-return" },
-        { name: "ROC Annual Compliance", desc: "MCA AOC-4 & MGT-7 company filings", path: "/compliance/roc-compliance" },
-        { name: "EPFO & ESIC Filings", desc: "Monthly employee wage & ECR challans", path: "/compliance/esi-pf" },
+        { name: "CIBIL & Credit Services", desc: "Report analysis, dispute filing & profile recovery", path: "/cibil", badge: "Credit Care" },
+        { name: "Accounting & Taxation", desc: "Bookkeeping, GST, ITR, TDS & virtual accounts", path: "/accounting", badge: "100% Compliant" },
+        { name: "Demat & Trading Solutions", desc: "NSE & BSE account opening, equity & derivatives", path: "/demat" },
+      ],
+    },
+    {
+      title: "Corporate & Growth Solutions",
+      icon: <Building2 className="w-4 h-4 text-gold-500" />,
+      items: [
+        { name: "Corporate Banking & Legal", desc: "Business registration, current accounts & legal support", path: "/corporate-banking", badge: "Corporate" },
+        { name: "Digital Marketing", desc: "Web development, SEO, Google & Meta Ads, lead gen", path: "/digital-marketing", badge: "Growth" },
+        { name: "Trade License & Registrations", desc: "GHMC, HMDA, GST, MSME & company incorporation", path: "/registrations/trade-license" },
       ],
     },
   ];
@@ -193,7 +173,7 @@ export default function Navbar() {
                 VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
               </span>
               <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold text-slate-500 block">
-                Loans & Real Estate Services
+                Financial • Corporate • Digital
               </span>
             </div>
           </Link>
@@ -271,27 +251,32 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Registrations Mega Menu */}
+            {/* Services & Solutions Mega Menu */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveMenu("registrations")}
+              onMouseEnter={() => setActiveMenu("services")}
               onMouseLeave={() => setActiveMenu(null)}
             >
               <button
                 className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname.startsWith("/registrations")
+                  pathname === "/cibil" ||
+                  pathname === "/accounting" ||
+                  pathname === "/demat" ||
+                  pathname === "/corporate-banking" ||
+                  pathname === "/digital-marketing" ||
+                  pathname === "/services"
                     ? "text-gold-600 bg-gold-500/10"
                     : "text-navy-900 hover:text-gold-600 hover:bg-slate-50"
                 }`}
               >
-                <span>Registrations</span>
+                <span>Services</span>
                 <ChevronDown className="w-4 h-4 transition-transform duration-200" />
               </button>
 
-              {activeMenu === "registrations" && (
-                <div className="absolute top-full left-0 w-[540px] pt-2 animate-fadeIn z-50">
+              {activeMenu === "services" && (
+                <div className="absolute top-full left-0 w-[560px] pt-2 animate-fadeIn z-50">
                   <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 p-5 grid grid-cols-2 gap-5">
-                    {registrationsMenu.map((sec, idx) => (
+                    {servicesMenu.map((sec, idx) => (
                       <div key={idx} className="space-y-2.5">
                         <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-navy-950 pb-1 border-b border-slate-100">
                           {sec.icon}
@@ -329,63 +314,16 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Compliance */}
-            <div
-              className="relative"
-              onMouseEnter={() => setActiveMenu("compliance")}
-              onMouseLeave={() => setActiveMenu(null)}
-            >
-              <button
-                className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname.startsWith("/compliance")
-                    ? "text-gold-600 bg-gold-500/10"
-                    : "text-navy-900 hover:text-gold-600 hover:bg-slate-50"
-                }`}
-              >
-                <span>Compliance</span>
-                <ChevronDown className="w-4 h-4 transition-transform duration-200" />
-              </button>
-
-              {activeMenu === "compliance" && (
-                <div className="absolute top-full left-0 w-[300px] pt-2 animate-fadeIn z-50">
-                  <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 p-4 space-y-1.5">
-                    {complianceMenu[0].items.map((item, i) => (
-                      <Link
-                        key={i}
-                        href={item.path}
-                        onClick={() => setActiveMenu(null)}
-                        className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors group"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-navy-950 group-hover:text-gold-600">
-                            {item.name}
-                          </span>
-                          {item.badge && (
-                            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-gold-500/15 text-gold-700 font-semibold">
-                              {item.badge}
-                            </span>
-                          )}
-                        </div>
-                        <p className="text-[11px] text-slate-500 mt-0.5">
-                          {item.desc}
-                        </p>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Services Directory */}
+            {/* CIBIL Services Direct Link */}
             <Link
-              href="/services"
+              href="/cibil"
               className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                pathname === "/services"
+                pathname === "/cibil"
                   ? "text-gold-600 bg-gold-500/10"
                   : "text-navy-900 hover:text-gold-600 hover:bg-slate-50"
               }`}
             >
-              Services
+              CIBIL
             </Link>
 
             {/* About Us */}
@@ -398,18 +336,6 @@ export default function Navbar() {
               }`}
             >
               About Us
-            </Link>
-
-            {/* Blog */}
-            <Link
-              href="/blog"
-              className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                pathname === "/blog"
-                  ? "text-gold-600 bg-gold-500/10"
-                  : "text-navy-900 hover:text-gold-600 hover:bg-slate-50"
-              }`}
-            >
-              Blog
             </Link>
 
             {/* Contact Us */}

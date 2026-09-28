@@ -18,25 +18,46 @@ import { Logos } from "@src/constant";
 export default function HomeBanner() {
   const heroFeatures = [
     {
-      title: "Business Loans",
+      title: "Loan & Financial Solutions",
       icon: <Coins className="w-5 h-5 text-gold-400" />,
-      tag: "Up to ₹20 Crore",
-      benefit: "Unsecured & working capital with minimal documentation",
-      link: "/loans/business-loan",
+      tag: "Multi-Bank Options",
+      benefit: "Business, Home, LAP & Project financing with top banks",
+      link: "/loans",
     },
     {
-      title: "Home Loans & LAP",
-      icon: <Building2 className="w-5 h-5 text-gold-400" />,
-      tag: "From 8.40% p.a.",
-      benefit: "Maximum loan eligibility with door-step bank coordination",
-      link: "/contact-us",
+      title: "CIBIL & Credit Services",
+      icon: <ShieldCheck className="w-5 h-5 text-gold-400" />,
+      tag: "Score Analysis",
+      benefit: "Credit profile analysis, dispute resolution & score recovery",
+      link: "/cibil",
     },
     {
-      title: "Trade & GST Setup",
+      title: "Accounting & Taxation",
       icon: <FileCheck className="w-5 h-5 text-gold-400" />,
       tag: "100% Compliant",
-      benefit: "Fast municipal trade license & government filings",
-      link: "/registrations/trade-license",
+      benefit: "GST, ITR, TDS filings, bookkeeping & audit assistance",
+      link: "/accounting",
+    },
+    {
+      title: "Demat & Trading Services",
+      icon: <Building2 className="w-5 h-5 text-gold-400" />,
+      tag: "Wealth & Markets",
+      benefit: "Seamless account opening & coordinated investment support",
+      link: "/demat",
+    },
+    {
+      title: "Corporate Banking & Legal",
+      icon: <Award className="w-5 h-5 text-gold-400" />,
+      tag: "End-to-End",
+      benefit: "Company registration, trade licenses & legal coordination",
+      link: "/corporate-banking",
+    },
+    {
+      title: "Digital Marketing Services",
+      icon: <Sparkles className="w-5 h-5 text-gold-400" />,
+      tag: "Business Growth",
+      benefit: "SEO, branding, web development & digital presence",
+      link: "/digital-marketing",
     },
   ];
 
@@ -60,19 +81,36 @@ export default function HomeBanner() {
             {/* Trust Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-[#C59B27]/40 text-gold-300 text-xs sm:text-sm font-semibold backdrop-blur-md shadow-sm">
               <Sparkles className="w-4 h-4 text-gold-400" />
-              <span>Telangana & Andhra Pradesh's Trusted Financial Advisory</span>
+              <span>Financial • Accounting • Corporate • Digital Solutions</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl xl:text-6xl font-extrabold font-display leading-[1.15] tracking-tight text-white">
-              Unlocking Capital & Real Estate with{" "}
-              <span className="gold-gradient-text">Trusted Expertise</span>
+              Your Trusted Partner for{" "}
+              <span className="gold-gradient-text">Financial & Business Solutions</span>
             </h1>
 
             {/* Description */}
             <p className="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Vaishnavi Associates partners with 30+ leading national and private banks to deliver customized Business Loans, Home Loans, and Real Estate advisory with lowest bank interest rates and guaranteed rapid approvals.
+              At Vaishnavi Associates, we provide professional financial, accounting, taxation, corporate, investment and digital solutions for individuals, entrepreneurs, businesses and corporates. Our goal is to simplify complex requirements through professional guidance, transparent communication and coordinated assistance.
             </p>
+
+            {/* 6 Core Solutions List */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-left max-w-xl mx-auto lg:mx-0">
+              {[
+                "Loan & Financial Solutions",
+                "CIBIL & Credit Services",
+                "Accounting & Taxation Services",
+                "Demat & Trading Services",
+                "Corporate Banking & Legal Services",
+                "Digital Marketing Services",
+              ].map((service, idx) => (
+                <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-100 font-medium">
+                  <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+                  <span>{service}</span>
+                </div>
+              ))}
+            </div>
 
             {/* Primary Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
@@ -84,33 +122,17 @@ export default function HomeBanner() {
                 }}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-extrabold shadow-gold-glow hover:brightness-110 transition-all duration-300 group text-sm sm:text-base"
               >
-                <span>Apply for a Loan</span>
+                <span>Get Free Consultation</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
 
               <Link
-                href="/#calculator"
+                href="/#services"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300 text-sm sm:text-base"
               >
-                <Calculator className="w-4 h-4 text-gold-400" />
-                <span>Calculate EMI</span>
+                <Sparkles className="w-4 h-4 text-gold-400" />
+                <span>Explore Solutions</span>
               </Link>
-            </div>
-
-            {/* Micro Trust Points */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 text-xs text-slate-200 font-medium">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>Zero Hidden Fees</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>30+ Partner Banks</span>
-              </div>
-              <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>Doorstep Assistance</span>
-              </div>
             </div>
 
           </div>

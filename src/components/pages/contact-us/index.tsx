@@ -12,7 +12,7 @@ export default function ContactUs() {
       <Banner
         route="/contact-us"
         name="Contact Us"
-        title="Get in Touch with Vaishnavi Associates"
+        title="Let's Discuss Your Requirement"
       />
 
       <section className="py-20 sm:py-28 bg-slate-50/70">
@@ -23,13 +23,13 @@ export default function ContactUs() {
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-3">
                 <span className="text-xs font-bold uppercase tracking-wider text-gold-600 block">
-                  Corporate Advisory Office
+                  CONTACT US
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-navy-950 leading-tight">
-                  We're Here to Discuss Your <span className="gold-gradient-text">Next Milestone</span>
+                  Let's Discuss Your <span className="gold-gradient-text">Requirement</span>
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Visit our office in Kompally, Hyderabad, or reach out via phone and email. Our financial specialists are available Monday to Saturday.
+                  Whether you need a loan, CIBIL assistance, accounting and taxation services, demat/trading assistance, corporate support or digital marketing, our team is ready to assist.
                 </p>
               </div>
 
@@ -55,7 +55,7 @@ export default function ContactUs() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-navy-950 mb-1">Direct Phone</h4>
+                    <h4 className="font-bold text-sm text-navy-950 mb-1">Direct Call</h4>
                     <a
                       href={`tel:${InformationData.contactNumber}`}
                       className="text-xs sm:text-sm font-semibold text-navy-900 hover:text-gold-600 transition"
@@ -64,6 +64,27 @@ export default function ContactUs() {
                     </a>
                     <p className="text-[11px] text-slate-400 mt-0.5">
                       Mon - Sat, 9:30 AM to 6:30 PM
+                    </p>
+                  </div>
+                </div>
+
+                {/* WhatsApp Assist */}
+                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                    <MessageSquare className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm text-navy-950 mb-1">WhatsApp Chat</h4>
+                    <a
+                      href={`https://wa.me/91${InformationData.whatsappNumber?.replace(/[^0-9]/g, '')}?text=Hi%20Vaishnavi%20Associates,%20I%20would%20like%20to%20discuss%20my%20requirement.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 transition block"
+                    >
+                      {InformationData.whatsappNumber}
+                    </a>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      Fast responses on WhatsApp
                     </p>
                   </div>
                 </div>
@@ -77,7 +98,7 @@ export default function ContactUs() {
                     <h4 className="font-bold text-sm text-navy-950 mb-1">Email Correspondence</h4>
                     <a
                       href={`mailto:${InformationData.email}`}
-                      className="text-xs sm:text-sm font-semibold text-navy-900 hover:text-gold-600 transition"
+                      className="text-xs sm:text-sm font-semibold text-navy-900 hover:text-gold-600 transition break-all"
                     >
                       {InformationData.email}
                     </a>
@@ -86,20 +107,20 @@ export default function ContactUs() {
 
               </div>
 
-              {/* WhatsApp Assist */}
+              {/* Instant WhatsApp CTA Box */}
               <div className="p-6 rounded-3xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-lg space-y-3">
                 <div className="flex items-center gap-2 font-bold text-sm">
                   <MessageSquare className="w-5 h-5" />
-                  <span>Instant WhatsApp Loan Query</span>
+                  <span>Instant WhatsApp Assistance</span>
                 </div>
                 <p className="text-xs text-emerald-100 leading-relaxed">
-                  Prefer instant messaging? Chat directly with our loan manager on WhatsApp for fast pre-qualification.
+                  Connect directly with our team on WhatsApp for immediate guidance on loans, CIBIL, accounting, demat, corporate or digital marketing.
                 </p>
                 <a
-                  href={`https://wa.me/919182258090?text=Hi%20Vaishnavi%20Associates,%20I%20am%20interested%20in%20a%20loan%20consultation`}
+                  href={`https://wa.me/91${InformationData.whatsappNumber?.replace(/[^0-9]/g, '')}?text=Hi%20Vaishnavi%20Associates,%20I%20would%20like%20to%20discuss%20my%20requirement.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-emerald-800 text-xs font-bold hover:bg-emerald-50 transition"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-emerald-800 font-bold text-xs hover:bg-emerald-50 transition shadow-sm"
                 >
                   <span>Chat on WhatsApp</span>
                   <ArrowRight className="w-3.5 h-3.5" />

@@ -64,27 +64,21 @@ export const Routes = [
         path: "/loans",
         child: [
             {
-                name: "",
+                name: "Individuals",
+                child: [
+                    { name: "Home Loans", path: "/loans/home-loan" },
+                    { name: "Home Loan Balance Transfer & Top-Up", path: "/loans/home-loan-balance-transfer" },
+                    { name: "Mortgage / Loan Against Property", path: "/loans/loan-against-property" },
+                    { name: "Personal Loans", path: "/loans/personal-loan" },
+                ]
+            },
+            {
+                name: "Businesses",
                 child: [
                     { name: "Business Loans", path: "/loans/business-loan" },
-                    { name: "Loan Against Property", path: "/contact-us" },
-                    { name: "Educational Loan", path: "/contact-us" }
-                ]
-            },
-            {
-                name: "",
-                child: [
-                    { name: "Home Loan", path: "/contact-us" },
-                    { name: "Personal Loan", path: "/contact-us" },
-                    { name: "Loan Documentation", path: "/contact-us" }
-                ]
-            },
-            {
-                name: "",
-                child: [
-                    { name: "Vehicle Loan", path: "/contact-us" },
-                    { name: "Gold Loan", path: "/contact-us" },
-                    { name: "Venture Capital Funding", path: "/contact-us" }
+                    { name: "Working Capital Funding", path: "/loans/working-capital-loan" },
+                    { name: "Loan Refinancing / Balance Transfer", path: "/loans/loan-refinancing" },
+                    { name: "Corporate Funding Assistance", path: "/loans/corporate-funding" },
                 ]
             }
         ]
@@ -379,13 +373,13 @@ export const FeaturesData: IFeaturesData[] = [
             "Fuel your business growth with tailored financial solutions. From working capital and MSME/CGTMSE schemes to machinery loans, get seamless approvals with competitive interest rates."
     },
     {
-       image: "/images/services/web-development.webp",
+        image: "/images/services/web-development.webp",
         name: "Home Loans & LAP",
         details:
             "Unlock the dream of your ideal property or leverage your existing real estate with high-value Loan Against Property (LAP) backed by 30+ leading national banks."
     },
     {
-       image: "/images/services/game-development.webp",
+        image: "/images/services/game-development.webp",
         name: "Registrations & Compliance",
         details:
             "Get complete corporate peace of mind. We handle Trade Licenses, GST, Company Incorporation, FSSAI, and annual ITR compliance with total speed and regulatory accuracy."
@@ -412,19 +406,29 @@ export const StepsData = [
 
 export const WhoWeAreData = [
     {
+        image: <Smile className="w-8 h-8 text-gold-500" />,
+        title: "Customer-Focused Approach",
+        details: "We understand each customer's requirement and help identify suitable options while coordinating documentation and service processes where applicable."
+    },
+    {
         image: <Rocket className="w-8 h-8 text-gold-500" />,
-        title: "Our Mission",
-        details: "At Vaishnavi Associates, our mission is to empower individuals, startups, and established enterprises by providing effortless access to institutional finance and prime real estate opportunities. We combine financial acumen with trustworthy advisory to ensure our clients achieve their aspirations with complete confidence."
+        title: "Multiple Professional Services",
+        details: "A comprehensive multi-service firm offering Loans, CIBIL Services, Accounting & Taxation, Demat & Trading, Corporate Banking, and Digital Marketing under one roof."
     },
     {
-        image: <Eye className="w-8 h-8 text-gold-500" />,
-        title: "Our Vision",
-        details: "To be recognized as Telangana & Andhra Pradesh's most respected financial and real estate consultancy firm, benchmarked for highest loan approval ratios, client-first advisory, integrity, and end-to-end corporate registration services."
+        image: <CheckCircle2 className="w-8 h-8 text-gold-500" />,
+        title: "Assistance from Enquiry to Completion",
+        details: "End-to-end coordinated assistance and dedicated advisory support from initial consultation to final paperwork and execution."
     },
     {
-        image: <Award className="w-8 h-8 text-gold-500" />,
-        title: "Why Us",
-        details: "With deep networks across 30+ leading private and public sector banks, an experienced team of Chartered Accountants, financial consultants, and real estate specialists, we deliver customized credit structures, minimal paperwork, and doorstep consultation."
+        image: <Coins className="w-8 h-8 text-gold-500" />,
+        title: "Wide Range of Financial Solutions",
+        details: "Extensive institutional financing network providing structured loan and capital options for individuals, entrepreneurs, and corporates."
+    },
+    {
+        image: <ShieldCheck className="w-8 h-8 text-gold-500" />,
+        title: "Professional and Transparent Communication",
+        details: "Commitment to absolute clarity, transparent guidance, zero hidden surprises, and reliable communication at every stage."
     }
 ];
 
@@ -2076,11 +2080,12 @@ export const OurTeamData = [
 ]
 
 export const InformationData = {
-    email: "info@vaishnaviassociates.com",
+    email: "vaishnaviassociates.services@gmail.com",
     address: "S.P.N Mansion 2, Jayabheri Park Rd, Kompally, Hyderabad, Telangana 500100",
     addressLink: "https://maps.google.com/?q=Kompally+Hyderabad+Telangana",
     addressIframLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.8876807833075!2d78.4862417751681!3d17.53673518337728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f86f78819ab%3A0x7d6f51cb32b2ef89!2sKompally%2C%20Hyderabad%2C%20Telangana%20500100!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-    contactNumber: "+91 91822 58090"
+    contactNumber: "+91 92999 99676",
+    whatsappNumber: "+91 62818 32385"
 }
 
 export const Logos = {

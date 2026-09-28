@@ -1,38 +1,43 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Percent,
-  Landmark,
-  ShieldAlert,
-  Clock,
-  UserCheck,
+  Users,
+  Layers,
   CheckCircle2,
-  ArrowRight,
+  Workflow,
+  Briefcase,
   Sparkles,
-  PhoneCall
+  PhoneCall,
+  ArrowRight
 } from "lucide-react";
+import { InformationData } from "@src/constant";
 
 export default function WhyChooseUs() {
   const reasons = [
     {
-      title: "Lowest Bank Rates Guaranteed",
-      desc: "We leverage institutional relationships across 30+ banks to secure interest rates starting from 8.40% p.a.",
-      icon: <Percent className="w-6 h-6 text-gold-500" />,
+      title: "Professional Assistance",
+      desc: "Experienced consultants providing structured, reliable, and expert guidance for every service requirement.",
+      icon: <Users className="w-6 h-6 text-gold-500" />,
     },
     {
-      title: "Pre-Underwritten Submissions",
-      desc: "We review your CIBIL profile and financials before submitting, protecting your credit score from inquiry penalties.",
-      icon: <UserCheck className="w-6 h-6 text-gold-500" />,
+      title: "Multiple Services",
+      desc: "Loans, CIBIL, Accounting, Taxation, Demat, Corporate Banking, Legal & Digital Solutions all under one roof.",
+      icon: <Layers className="w-6 h-6 text-gold-500" />,
     },
     {
-      title: "Doorstep Documentation",
-      desc: "Our financial executives collect, verify, and deliver all bank paperwork right from your home or office.",
-      icon: <Clock className="w-6 h-6 text-gold-500" />,
+      title: "Customer-Focused Approach",
+      desc: "Understanding each client's specific profile to identify the most suitable, cost-effective options.",
+      icon: <CheckCircle2 className="w-6 h-6 text-gold-500" />,
     },
     {
-      title: "Zero Hidden Margins",
-      desc: "100% transparent fee structure. No undisclosed charges or inflated processing fee promises.",
-      icon: <ShieldAlert className="w-6 h-6 text-gold-500" />,
+      title: "End-to-End Coordination",
+      desc: "Complete assistance from initial enquiry, documentation and submission to final execution and follow-up.",
+      icon: <Workflow className="w-6 h-6 text-gold-500" />,
+    },
+    {
+      title: "Business-Oriented Solutions",
+      desc: "Tailored strategies designed to accelerate growth, ensure compliance, and maximize operational efficiency.",
+      icon: <Briefcase className="w-6 h-6 text-gold-500" />,
     },
   ];
 
@@ -50,14 +55,14 @@ export default function WhyChooseUs() {
           <div className="lg:col-span-7 space-y-5">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-semibold shadow-sm">
               <Sparkles className="w-4 h-4 text-gold-400" />
-              <span>The Vaishnavi Standard</span>
+              <span>Why Vaishnavi Associates?</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display leading-tight tracking-tight">
-              Why 5,000+ Borrowers Choose{" "}
-              <span className="gold-gradient-text">Vaishnavi Associates</span>
+              One Partner.{" "}
+              <span className="gold-gradient-text">Multiple Business Solutions.</span>
             </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-              Applying for institutional credit directly often means navigating rigid bank bureaucracies, slow processing, and hidden clauses. We act as your dedicated credit advocates from application to payout.
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
+              Customers can access multiple professional services through one trusted brand instead of coordinating with multiple service providers.
             </p>
           </div>
 
@@ -68,19 +73,19 @@ export default function WhyChooseUs() {
                   <PhoneCall className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white">Direct Advisory Hotline</h4>
-                  <span className="text-xs text-slate-400">+91 91822 58090</span>
+                  <h4 className="font-bold text-sm text-white">Direct Advisory Support</h4>
+                  <span className="text-xs text-gold-300 font-semibold">{InformationData.contactNumber}</span>
                 </div>
               </div>
               <p className="text-xs text-slate-300">
-                Speak directly with senior loan officers to check eligibility without hurting your credit score.
+                Connect directly with our team to discuss your financial, corporate, or digital requirements today.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 4 Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 5 Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {reasons.map((item, index) => (
             <div
               key={index}
@@ -90,12 +95,16 @@ export default function WhyChooseUs() {
                 <div className="w-12 h-12 rounded-2xl bg-white/10 group-hover:bg-gold-500/20 flex items-center justify-center mb-6 transition-colors">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                <h3 className="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
                   {item.desc}
                 </p>
+              </div>
+
+              <div className="mt-6 pt-3 border-t border-white/10 flex items-center gap-1 text-[11px] font-semibold text-gold-400">
+                <span>Trusted Advantage</span>
               </div>
             </div>
           ))}

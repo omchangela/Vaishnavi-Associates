@@ -7,11 +7,8 @@ import {
   MapPin,
   ArrowRight,
   ShieldCheck,
-  Building2,
-  Coins,
-  FileCheck2,
-  Calculator,
-  ChevronRight
+  ChevronRight,
+  MessageSquare
 } from "lucide-react";
 import { InformationData, Logos } from "../../../constant";
 
@@ -41,110 +38,122 @@ export default function Footer() {
                 <span className="font-extrabold font-display text-lg text-white block leading-tight">
                   VAISHNAVI <span className="text-gold-500">ASSOCIATES</span>
                 </span>
-                <span className="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">
-                  Loans & Real Estate Services
+                <span className="text-[11px] uppercase tracking-wider text-gold-400 font-semibold">
+                  Financial • Corporate • Digital Solutions
                 </span>
               </div>
             </Link>
 
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Hyderabad's premier financial advisory and real estate consultancy firm. We partner with 30+ leading banks to secure low-interest loans, strategic commercial properties, and corporate licenses.
+            <p className="text-gold-300/90 text-xs font-semibold tracking-wide">
+              Financial | Accounting | Taxation | Corporate | Investment | Digital Solutions
             </p>
 
-            <div className="pt-2 flex items-center gap-3 text-xs text-slate-300">
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Your trusted partner for financial, accounting, taxation, corporate, investment and digital solutions. Simplifying complex requirements through professional guidance and transparent coordination.
+            </p>
+
+            <div className="pt-1 flex items-center gap-3 text-xs text-slate-300">
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
                 <ShieldCheck className="w-4 h-4 text-gold-500" />
-                <span>Verified DSA Network</span>
-              </div>
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
-                <Coins className="w-4 h-4 text-gold-500" />
-                <span>₹250+ Cr Disbursed</span>
+                <span>One Partner. Multiple Solutions.</span>
               </div>
             </div>
           </div>
 
-          {/* Col 2: Loan Products (3 cols) */}
+          {/* Col 2: Core Solutions (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-display border-b border-navy-800 pb-2">
-              Financing Solutions
+              Our Core Solutions
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
+            <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href="/loans/business-loan" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/loans" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Business Loans & MSME</span>
+                  <span>Loans & Financial Services</span>
                 </Link>
               </li>
               <li>
-                <Link href="/loans/home-loan" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/cibil" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Home Loans (From 8.40%)</span>
+                  <span>CIBIL & Credit Services</span>
                 </Link>
               </li>
               <li>
-                <Link href="/loans/loan-against-property" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/accounting" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Loan Against Property (LAP)</span>
+                  <span>Accounting & Taxation</span>
                 </Link>
               </li>
               <li>
-                <Link href="/loans/machinery-loan" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/demat" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Machinery & Equipment Credit</span>
+                  <span>Demat & Trading Solutions</span>
                 </Link>
               </li>
               <li>
-                <Link href="/loans" className="hover:text-gold-400 transition-colors flex items-center gap-1.5 text-gold-400 font-semibold">
+                <Link href="/corporate-banking" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>View All 10 Loan Schemes →</span>
+                  <span>Corporate Banking & Legal</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/digital-marketing" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
+                  <span>Digital Marketing Services</span>
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Registrations & Real Estate (2 cols) */}
+          {/* Col 3: Who We Serve & Quick Links (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-display border-b border-navy-800 pb-2">
-              Corporate & Tax
+              Who We Serve
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
-                <Link href="/business-registration/private-limited-company" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/about-us" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Pvt Ltd Company</span>
+                  <span>About Us</span>
                 </Link>
               </li>
               <li>
-                <Link href="/licenses/trade-license" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/#who-we-serve" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>Trade License GHMC</span>
+                  <span>Individuals</span>
                 </Link>
               </li>
               <li>
-                <Link href="/gst/gst-registration" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/#who-we-serve" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>GST Registration</span>
+                  <span>Entrepreneurs</span>
                 </Link>
               </li>
               <li>
-                <Link href="/tax/itr-filing" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                <Link href="/#who-we-serve" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>ITR Tax Filing</span>
+                  <span>Small & Medium Businesses</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-gold-400 transition-colors flex items-center gap-1.5 text-gold-400 font-semibold">
+                <Link href="/#who-we-serve" className="hover:text-gold-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
-                  <span>All 45+ Services →</span>
+                  <span>Corporates</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact-us" className="hover:text-gold-400 transition-colors flex items-center gap-1.5 text-gold-400 font-semibold">
+                  <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
+                  <span>Contact Our Team →</span>
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Contact & Office (3 cols) */}
+          {/* Col 4: Contact & Support (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-display border-b border-navy-800 pb-2">
-              Office Location
+              Get in Touch
             </h4>
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2.5">
@@ -156,12 +165,23 @@ export default function Footer() {
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-gold-500 shrink-0" />
                 <a href={`tel:${InformationData.contactNumber}`} className="text-slate-300 hover:text-gold-400">
-                  {InformationData.contactNumber}
+                  Call: {InformationData.contactNumber}
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
+                <a
+                  href={`https://wa.me/91${InformationData.whatsappNumber?.replace(/[^0-9]/g, '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-emerald-400"
+                >
+                  WhatsApp: {InformationData.whatsappNumber}
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-gold-500 shrink-0" />
-                <a href={`mailto:${InformationData.email}`} className="text-slate-300 hover:text-gold-400">
+                <a href={`mailto:${InformationData.email}`} className="text-slate-300 hover:text-gold-400 break-all">
                   {InformationData.email}
                 </a>
               </div>
@@ -170,10 +190,10 @@ export default function Footer() {
             <div className="pt-2">
               <Link
                 href="/contact-us"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-navy-950 bg-gradient-to-r from-gold-400 to-gold-500 hover:brightness-110 shadow-sm"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-navy-950 bg-gradient-to-r from-gold-400 to-gold-500 hover:brightness-110 shadow-sm"
               >
-                <span>Request Callback</span>
-                <ArrowRight className="w-3 h-3" />
+                <span>Request Consultation</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>
@@ -181,19 +201,19 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer Note */}
-        <div className="py-6 border-b border-navy-800/80 text-[11px] leading-relaxed text-slate-300">
+        <div className="py-6 border-b border-navy-800/80 text-[11px] leading-relaxed text-slate-400">
           <p>
-            <strong className="text-slate-300">Disclaimer:</strong> Vaishnavi Associates is an independent financial consulting and credit facilitation firm partnering with scheduled commercial banks, NBFCs, and financial institutions. All loan approvals, sanction limits, and interest rates are governed by the respective lender&apos;s internal credit underwriting policy and regulatory guidelines.
+            <strong className="text-slate-200">Disclaimer:</strong> Services are subject to applicable laws, regulations, eligibility criteria, documentation and approval by relevant institutions, regulators, brokers, credit bureaus or service providers. Loan approval, interest rates, investment returns, credit-score changes and other outcomes are not guaranteed. Customers should review applicable terms and conditions before proceeding.
           </p>
         </div>
 
         {/* Bottom Row */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
-          <p>© {new Date().getFullYear()} Vaishnavi Associates. All rights reserved.</p>
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <p>© 2026 Vaishnavi Associates. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/contact-us" className="hover:text-gold-400">Privacy Policy</Link>
-            <Link href="/contact-us" className="hover:text-gold-400">Terms of Service</Link>
-            <Link href="/login" className="hover:text-gold-400">Client Portal</Link>
+            <Link href="/contact-us" className="hover:text-gold-400">Contact Us</Link>
+            <Link href="/about-us" className="hover:text-gold-400">About Us</Link>
+            <Link href="/#services" className="hover:text-gold-400">Our Services</Link>
           </div>
         </div>
 

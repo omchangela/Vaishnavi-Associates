@@ -16,7 +16,7 @@ export default function AboutUs() {
       <Banner
         route="/about-us"
         name="About Us"
-        title="About Vaishnavi Associates"
+        title="Professional Solutions Under One Roof"
       />
 
       {/* 2. Who We Are (Mission, Vision, Values) */}
