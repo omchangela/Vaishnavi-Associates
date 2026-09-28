@@ -18,7 +18,7 @@ export default function ContactUs() {
       <section className="py-20 sm:py-28 bg-slate-50/70">
         <div className="mainContainer">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Left Contact Details (5 cols) */}
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-3">
@@ -35,7 +35,7 @@ export default function ContactUs() {
 
               {/* Info Cards */}
               <div className="space-y-4">
-                
+
                 {/* Address */}
                 <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-navy-900/5 text-gold-500 flex items-center justify-center shrink-0">
@@ -140,7 +140,7 @@ export default function ContactUs() {
             <div className="p-6 border-b border-slate-100 flex items-center justify-between">
               <div>
                 <h3 className="font-bold text-base text-navy-950">Visit Our Hyderabad Office</h3>
-                <p className="text-xs text-slate-500">S.P.N Mansion 2, Jayabheri Park Road, Kompally</p>
+                <p className="text-xs text-slate-500">Nearby Forum Mall, Kukatpally, PIN - 500085, Hyderabad</p>
               </div>
               <a
                 href={InformationData.addressLink}

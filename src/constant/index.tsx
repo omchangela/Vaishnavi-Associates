@@ -2081,8 +2081,8 @@ export const OurTeamData = [
 
 export const InformationData = {
     email: "vaishnaviassociates.services@gmail.com",
-    address: "S.P.N Mansion 2, Jayabheri Park Rd, Kompally, Hyderabad, Telangana 500100",
-    addressLink: "https://maps.google.com/?q=Kompally+Hyderabad+Telangana",
+    address: "Nearby Forum Mall, Kukatpally, PIN - 500085, Hyderabad",
+    addressLink: "https://maps.google.com/?q=Forum+Mall+Kukatpally+Hyderabad+Telangana",
     addressIframLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.8876807833075!2d78.4862417751681!3d17.53673518337728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f86f78819ab%3A0x7d6f51cb32b2ef89!2sKompally%2C%20Hyderabad%2C%20Telangana%20500100!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
     contactNumber: "+91 92999 99676",
     whatsappNumber: "+91 62818 32385"
